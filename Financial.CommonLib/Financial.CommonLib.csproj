@@ -82,32 +82,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cache\CacheHelper.cs" />
-    <Compile Include="Cache\MemcachedHelper.cs" />
-    <Compile Include="Cache\MemoryCacheHelper.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="FileSys\ExcelHelper.cs" />
-    <Compile Include="FileSys\FileConvert.cs" />
-    <Compile Include="FileSys\FileUploader.cs" />
-    <Compile Include="FileSys\FTPClient.cs" />
-    <Compile Include="FileSys\FTPFileUploader.cs" />
-    <Compile Include="FileSys\ImageHelper.cs" />
-    <Compile Include="FileSys\UploadConfig.cs" />
-    <Compile Include="FileSys\UploadFileInfo.cs" />
-    <Compile Include="Helper\CodeHelper.cs" />
-    <Compile Include="Helper\ConvertHelper.cs" />
-    <Compile Include="Helper\HttpHelper.cs" />
-    <Compile Include="Helper\JsonHelper.cs" />
-    <Compile Include="Helper\PageHelper.cs" />
-    <Compile Include="Helper\SecureHelper.cs" />
-    <Compile Include="Helper\StaticPageHelper.cs" />
-    <Compile Include="Helper\StringHelper.cs" />
-    <Compile Include="Helper\VerifyHelper.cs" />
     <Compile Include="Mail\MailSender.cs" />
     <Compile Include="Mail\MailSenderInfo.cs" />
     <Compile Include="Mail\MailSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cache\" />
+    <Folder Include="FileSys\" />
+    <Folder Include="Helper\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

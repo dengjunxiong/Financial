@@ -18,9 +18,9 @@ namespace Financial.CommonLib.Mail
         /// 配置集合
         /// </summary>
         public List<MailSenderInfo> Senders = new List<MailSenderInfo>();
-        private Hashtable _hashByName = new Hashtable();//Hash集合
+        private Hashtable hashByName = new Hashtable();//Hash集合
 
-        private static MailSettings _current = null;
+        private static MailSettings current = null;
         /// <summary>
         /// 获得当前配置集合
         /// </summary>
@@ -28,11 +28,11 @@ namespace Financial.CommonLib.Mail
         {
             get
             {
-                if (_current == null)
+                if (current == null)
                 {
-                    _current = FromFile(FilePath);
+                    current = FromFile(FilePath);
                 }
-                return _current;
+                return current;
             }
         }
 
@@ -41,11 +41,11 @@ namespace Financial.CommonLib.Mail
         /// </summary>
         protected void initialHash()
         {
-            _hashByName.Clear();
+            hashByName.Clear();
 
-            foreach (MailSenderInfo oInfo in Senders)
+            foreach (MailSenderInfo info in Senders)
             {
-                _hashByName.Add(oInfo.Name, oInfo);
+                hashByName.Add(info.Name, info);
             }
         }
 
@@ -58,13 +58,13 @@ namespace Financial.CommonLib.Mail
         {
             get
             {
-                MailSenderInfo oRet = (MailSenderInfo)_hashByName[sKey];
-                if (oRet == null)
+                MailSenderInfo mailSenderInfo = (MailSenderInfo)hashByName[sKey];
+                if (mailSenderInfo == null)
                 {
                     //这里可以初始化一个默认的发送账户，也可以抛出异常；
                     throw new Exception("发送账户没有配置");
                 }
-                return oRet;
+                return mailSenderInfo;
             }
         }
 
@@ -85,17 +85,17 @@ namespace Financial.CommonLib.Mail
         /// </summary>
         public static void Invalidate()
         {
-            _current = null;
+            current = null;
         }
 
         /// <summary>
         /// 保存配置信息
         /// </summary>
-        /// <param name="sFileName">文件路径</param>
-        public void SaveToFile(string sFileName)
+        /// <param name="fileName">文件路径</param>
+        public void SaveToFile(string fileName)
         {
             XmlSerializer xs = new XmlSerializer(typeof(MailSettings));
-            Stream stream = new FileStream(sFileName, FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
+            Stream stream = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
             xs.Serialize(stream, this);
             stream.Close();
         }
@@ -103,17 +103,17 @@ namespace Financial.CommonLib.Mail
         /// <summary>
         /// 读取配置信息
         /// </summary>
-        /// <param name="sFileName">文件路径</param>
+        /// <param name="fileName">文件路径</param>
         /// <returns>邮件配置器</returns>
-        public static MailSettings FromFile(string sFileName)
+        public static MailSettings FromFile(string fileName)
         {
             XmlSerializer xs = new XmlSerializer(typeof(MailSettings));
-            Stream stream = new FileStream(sFileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-            MailSettings oRet = (MailSettings)xs.Deserialize(stream);
+            Stream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            MailSettings mailSettings = (MailSettings)xs.Deserialize(stream);
             stream.Close();
 
-            oRet.initialHash();
-            return oRet;
+            mailSettings.initialHash();
+            return mailSettings;
         }
     }
 }

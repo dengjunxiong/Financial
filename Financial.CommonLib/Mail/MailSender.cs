@@ -16,10 +16,22 @@ namespace Financial.CommonLib.Mail
     {
         private MailMessage mailMessage;
         private SmtpClient smtpClient;
-        private string password;//发件人密码
-        private string smtp;//邮件服务地址
-        private bool enableSsl = false;//是否开启SSL验证
-        private int post = 25;//SMTP服务器端口号
+        /// <summary>
+        /// 发件人密码
+        /// </summary>
+        private string password;
+        /// <summary>
+        /// 邮件服务地址
+        /// </summary>
+        private string smtp;
+        /// <summary>
+        /// 是否开启SSL验证
+        /// </summary>
+        private bool enableSsl = false;
+        /// <summary>
+        /// SMTP服务器端口号
+        /// </summary>
+        private int post = 25;
 
         /// <summary> 
         /// 处审核后类的实例 
