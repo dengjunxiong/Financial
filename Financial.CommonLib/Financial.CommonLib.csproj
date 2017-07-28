@@ -44,7 +44,7 @@
     <Compile Include="Configuration.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Mail\MailSender.cs" />
-    <Compile Include="Mail\MailSenderInfo.cs" />
+    <Compile Include="Mail\MailInfo.cs" />
     <Compile Include="Mail\MailSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

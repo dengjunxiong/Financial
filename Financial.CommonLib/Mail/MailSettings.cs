@@ -17,7 +17,7 @@ namespace Financial.CommonLib.Mail
         /// <summary>
         /// 配置集合
         /// </summary>
-        public List<MailSenderInfo> Senders = new List<MailSenderInfo>();
+        public List<MailInfo> Senders = new List<MailInfo>();
         private Hashtable hashByName = new Hashtable();//Hash集合
 
         private static MailSettings current = null;
@@ -43,7 +43,7 @@ namespace Financial.CommonLib.Mail
         {
             hashByName.Clear();
 
-            foreach (MailSenderInfo info in Senders)
+            foreach (MailInfo info in Senders)
             {
                 hashByName.Add(info.Name, info);
             }
@@ -52,13 +52,13 @@ namespace Financial.CommonLib.Mail
         /// <summary>
         /// 键值索引器
         /// </summary>
-        /// <param name="sKey">键值</param>
+        /// <param name="key">键值</param>
         /// <returns>邮件配置</returns>
-        public MailSenderInfo this[string sKey]
+        public MailInfo this[string key]
         {
             get
             {
-                MailSenderInfo mailSenderInfo = (MailSenderInfo)hashByName[sKey];
+                MailInfo mailSenderInfo = (MailInfo)hashByName[key];
                 if (mailSenderInfo == null)
                 {
                     //这里可以初始化一个默认的发送账户，也可以抛出异常；
