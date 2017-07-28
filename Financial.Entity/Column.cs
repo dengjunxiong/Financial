@@ -24,10 +24,16 @@ namespace Financial.Entity
         public string ColumnName { get; set; }
 
         /// <summary>
-        /// 资讯类型关键词
+        /// 关键词
         /// </summary>
         [MaxLength(50)]
-        public string ColumnKeyName { get; set; }
+        public string KeyWord { get; set; }
+
+        /// <summary>
+        /// 描述
+        /// </summary>
+        [MaxLength(100)]
+        public string Desc { get; set; }
 
         /// <summary>
         /// 排序

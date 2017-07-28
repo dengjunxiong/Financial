@@ -19,6 +19,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financial.WebAPI", "Financi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financial.WebAPI.Tests", "Financial.WebAPI.Tests\Financial.WebAPI.Tests.csproj", "{983CFDE9-F781-4A33-A8CF-54B4AF913F88}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{D4209C1D-ECC4-42AF-BA86-AECF4C9CDA77}"
+	ProjectSection(SolutionItems) = preProject
+		conn.config = conn.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{6CB65C20-FE9D-49F7-B904-295B247EC10A}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\Microsoft.Office.Interop.Excel.dll = Libs\Microsoft.Office.Interop.Excel.dll
+		Libs\Microsoft.Office.Interop.Graph.dll = Libs\Microsoft.Office.Interop.Graph.dll
+		Libs\Microsoft.Office.Interop.PowerPoint.dll = Libs\Microsoft.Office.Interop.PowerPoint.dll
+		Libs\Microsoft.Office.Interop.Word.dll = Libs\Microsoft.Office.Interop.Word.dll
+		Libs\NPOI.dll = Libs\NPOI.dll
+		Libs\NPOI.OOXML.dll = Libs\NPOI.OOXML.dll
+		Libs\NPOI.OpenXml4Net.dll = Libs\NPOI.OpenXml4Net.dll
+		Libs\NPOI.OpenXmlFormats.dll = Libs\NPOI.OpenXmlFormats.dll
+		Libs\Office.dll = Libs\Office.dll
+		Libs\PdfToSwf.exe = Libs\PdfToSwf.exe
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
