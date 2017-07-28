@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Financial.DAL")]
+[assembly: AssemblyTitle("Financial.DAL.SQLServer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Financial.DAL")]
+[assembly: AssemblyProduct("Financial.DAL.SQLServer")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("c9373242-10b3-4153-8942-61ed95c2fc69")]
+[assembly: Guid("2fa99bd9-6482-4f2e-9a83-3e4f08ca8ff4")]
 
 // 程序集的版本信息由下面四个值组成: 
 //

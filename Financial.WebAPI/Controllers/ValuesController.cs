@@ -4,15 +4,19 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Financial.Entity;
+using Financial.BLL;
 
 namespace Financial.WebAPI.Controllers
 {
     public class ValuesController : ApiController
     {
+        private ArticleBLL bll = new ArticleBLL();
+
         // GET api/values
-        public IEnumerable<string> Get()
+        public IEnumerable<Article> Get()
         {
-            return new string[] { "value1", "value2" };
+            return bll.GetALL();
         }
 
         // GET api/values/5
@@ -24,6 +28,9 @@ namespace Financial.WebAPI.Controllers
         // POST api/values
         public void Post([FromBody]string value)
         {
+            Article model = new Article();
+            model.Contents = "1111";
+
         }
 
         // PUT api/values/5
