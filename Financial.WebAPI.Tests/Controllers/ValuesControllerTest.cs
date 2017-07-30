@@ -7,6 +7,7 @@ using System.Web.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Financial.WebAPI;
 using Financial.WebAPI.Controllers;
+using Financial.Entity;
 
 namespace Financial.WebAPI.Tests.Controllers
 {
@@ -20,7 +21,7 @@ namespace Financial.WebAPI.Tests.Controllers
             ValuesController controller = new ValuesController();
 
             // 操作
-            IEnumerable<string> result = controller.Get();
+            IEnumerable<Article> result = controller.Get();
 
             // 断言
             Assert.IsNotNull(result);

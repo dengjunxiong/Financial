@@ -66,7 +66,7 @@
       <Name>Financial.CommonLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\Financial.DAL.MySql\Financial.DAL.MySql.csproj">
-      <Project>{a8e4c14d-c9a2-48b8-a9c0-801b196f5cd5}</Project>
+      <Project>{031a0700-de0c-455d-b230-7f0581bda4a1}</Project>
       <Name>Financial.DAL.MySql</Name>
     </ProjectReference>
     <ProjectReference Include="..\Financial.Entity\Financial.Entity.csproj">
