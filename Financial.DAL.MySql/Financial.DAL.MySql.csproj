@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A8E4C14D-C9A2-48B8-A9C0-801B196F5CD5}</ProjectGuid>
+    <ProjectGuid>{031A0700-DE0C-455D-B230-7F0581BDA4A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Financial.DAL.MySql</RootNamespace>
