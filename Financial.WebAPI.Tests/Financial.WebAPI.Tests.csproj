@@ -127,6 +127,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Financial.Entity\Financial.Entity.csproj">
+      <Project>{c8705f36-1c7d-43bb-82cc-52e62e23373e}</Project>
+      <Name>Financial.Entity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Financial.WebAPI\Financial.WebAPI.csproj">
       <Project>{9FDB0BBC-B593-40F9-82CD-4FF414BB2EDC}</Project>
       <Name>Financial.WebAPI</Name>
