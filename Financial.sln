@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financial.CommonLib", "Financial.CommonLib\Financial.CommonLib.csproj", "{7FAF0CA3-B660-4997-9AAD-5D9BEAE173E3}"
 EndProject
@@ -38,9 +38,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{6CB65C20-F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Financial.DAL", "Financial.DAL", "{96299DFE-DDC3-45E9-8D42-4800C22CDAD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financial.DAL.MySql", "Financial.DAL.MySql\Financial.DAL.MySql.csproj", "{A8E4C14D-C9A2-48B8-A9C0-801B196F5CD5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financial.DAL.SQLServer", "Financial.DAL.SQLServer\Financial.DAL.SQLServer.csproj", "{D4398962-CB85-4160-BC03-1A3099EA0E87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financial.DAL.MySql", "Financial.DAL.MySql\Financial.DAL.MySql.csproj", "{031A0700-DE0C-455D-B230-7F0581BDA4A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -76,20 +76,20 @@ Global
 		{983CFDE9-F781-4A33-A8CF-54B4AF913F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{983CFDE9-F781-4A33-A8CF-54B4AF913F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{983CFDE9-F781-4A33-A8CF-54B4AF913F88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8E4C14D-C9A2-48B8-A9C0-801B196F5CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8E4C14D-C9A2-48B8-A9C0-801B196F5CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8E4C14D-C9A2-48B8-A9C0-801B196F5CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8E4C14D-C9A2-48B8-A9C0-801B196F5CD5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4398962-CB85-4160-BC03-1A3099EA0E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4398962-CB85-4160-BC03-1A3099EA0E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4398962-CB85-4160-BC03-1A3099EA0E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4398962-CB85-4160-BC03-1A3099EA0E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031A0700-DE0C-455D-B230-7F0581BDA4A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031A0700-DE0C-455D-B230-7F0581BDA4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031A0700-DE0C-455D-B230-7F0581BDA4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031A0700-DE0C-455D-B230-7F0581BDA4A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A8E4C14D-C9A2-48B8-A9C0-801B196F5CD5} = {96299DFE-DDC3-45E9-8D42-4800C22CDAD5}
 		{D4398962-CB85-4160-BC03-1A3099EA0E87} = {96299DFE-DDC3-45E9-8D42-4800C22CDAD5}
+		{031A0700-DE0C-455D-B230-7F0581BDA4A1} = {96299DFE-DDC3-45E9-8D42-4800C22CDAD5}
 	EndGlobalSection
 EndGlobal
